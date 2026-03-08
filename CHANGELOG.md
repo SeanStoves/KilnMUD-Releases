@@ -2,6 +2,14 @@
 
 All notable changes to KilnMUD are documented here.
 
+## [v1.5.13] — v1.5.13 (2026-03-08)
+
+## Changes
+
+- **Diagnostic: separate compile from execute for CowBar**: Uses KeraLua's low-level `LoadFile` (compile) + `PCall` (execute) instead of NLua's `DoFile`. The diagnostic log now shows which step crashes — compile or execute — to guide the fix.
+
+Check `%LOCALAPPDATA%\KilnMUD\diagnostic.log` after crash.
+
 ## [v1.5.12] — v1.5.12 (2026-03-08)
 
 ## Changes
