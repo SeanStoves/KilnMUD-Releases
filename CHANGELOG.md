@@ -2,6 +2,20 @@
 
 All notable changes to KilnMUD are documented here.
 
+## [v1.5.12] — v1.5.12 (2026-03-08)
+
+## Changes
+
+- **Fix CowBar crash**: The Lua C compiler uses the C call stack recursively during parsing. CowBar's 1.5MB embedded script was overflowing the default 1MB Windows thread stack, causing a native crash that bypassed all .NET exception handling. Large scripts (>64KB) are now compiled on a dedicated thread with an 8MB stack.
+
+## Diagnostic confirmation
+
+The crash always stopped at exactly the same point:
+```
+[00:00:27.154] Executing plugin script source (1514753 chars)
+```
+All smaller plugins loaded fine. The 1.5MB CowBar script was the only one crashing — consistent with a stack overflow during recursive descent parsing.
+
 ## [v1.5.11] — v1.5.11 (2026-03-08)
 
 ## Changes
