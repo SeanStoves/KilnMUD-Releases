@@ -2,6 +2,17 @@
 
 All notable changes to KilnMUD are documented here.
 
+## [v1.5.8] — v1.5.8 (2026-03-08)
+
+## Changes
+
+- **Fix Windows crash on connect**: Reverted WorldView UI changes (context menu, named border lookups, ApplyTheme) introduced in v1.5.4 that caused native crashes when connecting profiles with plugins
+- **Default font size 12**: Output and input fonts now default to 12pt for better legibility
+
+## Notes
+
+The output context menu and themed input line features will be re-implemented safely in a future release.
+
 ## [v1.5.7] — Fix Native Crash on Windows (2026-03-08)
 
 ## Bug Fix
