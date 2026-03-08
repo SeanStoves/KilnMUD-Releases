@@ -2,6 +2,25 @@
 
 All notable changes to KilnMUD are documented here.
 
+## [v1.5.6] — Crash Protection & Diagnostics (2026-03-08)
+
+## Changes
+
+### Global Crash Handler
+All unhandled exceptions (background threads, unobserved tasks) are now caught and logged to:
+```
+%LOCALAPPDATA%/KilnMUD/crash.log    (Windows)
+~/.local/share/KilnMUD/crash.log    (Linux)
+```
+
+### Exception Protection
+- Protected all `MudConnection` event invocations (Connected, Disconnected, DataReceived) from crashing background threads
+- Protected `connectFromProfile` flow: plugin loading, connect text handlers, and connection individually wrapped
+- Protected `WorldConnection.onConnected` and trigger evaluation on socket threads
+
+### If It Still Crashes
+Please check the crash log file above and share its contents — it will contain the exact exception and stack trace.
+
 ## [v1.5.5] — Fix Profile+Plugin Connect Crash (2026-03-08)
 
 ## Bug Fix
