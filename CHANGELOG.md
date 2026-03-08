@@ -2,6 +2,20 @@
 
 All notable changes to KilnMUD are documented here.
 
+## [v1.5.10] — v1.5.10 (2026-03-08)
+
+## Changes
+
+- **Diagnostic logging for crash investigation**: Writes step-by-step progress during plugin loading and connection to a log file. The file is flushed after each write, so even if the process crashes natively, the last entry shows exactly where it stopped.
+
+## How to use
+
+1. Run KilnMUD and reproduce the crash
+2. Check the diagnostic log:
+   - **Windows**: `%LOCALAPPDATA%\KilnMUD\diagnostic.log`
+   - **Linux/macOS**: `~/.local/share/KilnMUD/diagnostic.log`
+3. Share the contents of that file — it will show the last successful step before the crash
+
 ## [v1.5.9] — v1.5.9 (2026-03-08)
 
 ## Changes
