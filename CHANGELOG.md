@@ -2,6 +2,15 @@
 
 All notable changes to KilnMUD are documented here.
 
+## [v1.5.9] — v1.5.9 (2026-03-08)
+
+## Changes
+
+- **Fix native crash when loading plugins on Windows**: Three root causes identified and fixed:
+  1. Removed `LoadCLRPackage()` from Lua engine — it loaded unnecessary native CLR interop code that caused crashes when multiple plugin Lua states were created. NLua's object proxy works without it.
+  2. Moved plugin connect/disconnect callbacks from the network background thread to the UI thread, preventing cross-thread native Lua access.
+  3. Added thread-safety lock to plugin script host to serialize all Lua calls, preventing concurrent access during trigger evaluation.
+
 ## [v1.5.8] — v1.5.8 (2026-03-08)
 
 ## Changes
