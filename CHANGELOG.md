@@ -2,6 +2,20 @@
 
 All notable changes to KilnMUD are documented here.
 
+## [v1.5.5] — Fix Profile+Plugin Connect Crash (2026-03-08)
+
+## Bug Fix
+
+Fixes a crash when connecting via a saved profile that has plugins loaded.
+
+### Root Cause
+`CreateWildcardsTable` in the Lua engine used a temporary global variable (`__tmp_wildcards`) to create wildcard tables for trigger/alias callbacks. After clearing the global reference, the Lua GC could collect the table before it was used by the script callback, causing a native access violation that crashed the app.
+
+### Fix
+- Replaced temporary global approach with anonymous table creation (`return {}`) that is properly referenced by the C# `LuaTable` wrapper
+- Added defensive error handling in `PluginScriptHost.CallFunction` for wildcard conversion failures
+- Protected `WorldConnection.onConnected` and line processing handlers from unhandled exceptions on background threads
+
 ## [v1.5.4] — Native .kiln Format & UI Enhancements (2026-03-08)
 
 ## What's New
