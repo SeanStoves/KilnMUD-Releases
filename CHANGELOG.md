@@ -2,6 +2,13 @@
 
 All notable changes to KilnMUD are documented here.
 
+## [v1.5.2] — About Dialog & Public Release Workflow (2026-03-08)
+
+### Improvements
+
+- **About dialog** — Help > About KilnMUD now opens a styled dialog with version, author credit, and a clickable link to report bugs or view the changelog
+- **Public release workflow** — CI now automatically publishes releases and build artifacts to the public repo
+
 ## [v1.5.1] — MUSHclient Plugin API Compatibility (2026-03-08)
 
 ### Fixes & Improvements
