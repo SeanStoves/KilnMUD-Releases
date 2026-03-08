@@ -2,6 +2,28 @@
 
 All notable changes to KilnMUD are documented here.
 
+## [v1.5.7] — Fix Native Crash on Windows (2026-03-08)
+
+## Bug Fix
+
+Fixes the crash when connecting a profile with plugins on Windows.
+
+### Root Cause
+Creating `LuaTable` objects from C# via NLua's interop (`NewTable`/`GetTable`/`DoString`) and passing them as function arguments caused native segfaults in the Lua VM on Windows. The NLua/KeraLua table reference handling has platform-specific issues that bypass .NET exception handling entirely.
+
+### New Approach
+Wildcards tables are now created **entirely within Lua** using a helper function `__call_with_wildcards`. The C# side only passes simple strings to Lua — no `LuaTable` objects are created from C# at all:
+
+1. Individual wildcard strings are passed as arguments from C# to Lua
+2. A Lua-side helper constructs the 0-based wildcards table
+3. The helper calls the target trigger/alias function with the table
+
+This eliminates all C#→Lua table interop, which was the source of the native crash.
+
+### Also includes (from v1.5.6)
+- Global crash handler logging to `%LOCALAPPDATA%/KilnMUD/crash.log`
+- Comprehensive exception protection on all background threads
+
 ## [v1.5.6] — Crash Protection & Diagnostics (2026-03-08)
 
 ## Changes
