@@ -2,6 +2,30 @@
 
 All notable changes to KilnMUD are documented here.
 
+## [v1.5.4] — Native .kiln Format & UI Enhancements (2026-03-08)
+
+## What's New
+
+### Native .kiln World File Format
+- New JSON-based `.kiln` format as the default save format
+- Human-readable, clean DTO structure — no legacy XML quirks
+- Open/Save/Save As dialogs default to `.kiln`, with `.mcl`/`.xml` still supported
+
+### Themed Input Line
+- Input box text and background now follow the active theme
+- No more invisible text on dark themes — colors properly applied from `InputForeground`, `InputBackground`, `InputBorder`
+
+### Output Context Menu
+- Right-click on output text for context menu
+- Copy, Select All
+- **Create Trigger from Selection** — opens trigger editor pre-populated with the clicked line
+- **Create Alias from Selection** — opens alias editor pre-populated with the clicked line
+
+### Plugin Fixes (from v1.5.3)
+- Fix `GetInfo(72)` returning nil (CowBar compatibility)
+- Fix wildcard tables not passed to trigger/alias script callbacks (QuowMindspace compatibility)
+- Regex captures now correctly passed as 1-based Lua tables to MUSHclient-style callbacks
+
 ## [v1.5.3] — Fix Plugin Script Initialization (2026-03-08)
 
 ## Bug Fixes
