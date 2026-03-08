@@ -2,6 +2,20 @@
 
 All notable changes to KilnMUD are documented here.
 
+## [v1.5.11] — v1.5.11 (2026-03-08)
+
+## Changes
+
+- **Fix native crash loading CowBar and other large plugins**: The crash was caused by marshalling a 1.5MB Lua script through P/Invoke `DoString()` to the native Lua C API. Scripts over 64KB are now written to a temp file and loaded via `DoFile()` instead, completely bypassing the string interop bottleneck.
+
+## Diagnostic log
+
+The diagnostic log (`%LOCALAPPDATA%\KilnMUD\diagnostic.log`) pinpointed the crash to:
+```
+Executing plugin script source (1514753 chars)
+```
+CowBar's 1.5MB embedded Lua script was the culprit.
+
 ## [v1.5.10] — v1.5.10 (2026-03-08)
 
 ## Changes
