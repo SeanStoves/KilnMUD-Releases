@@ -2,6 +2,15 @@
 
 All notable changes to KilnMUD are documented here.
 
+## [v1.5.3] — Fix Plugin Script Initialization (2026-03-08)
+
+## Bug Fixes
+
+- **CowBar `string.sub` nil error** — `GetPluginID()` / `GetPluginName()` now return the plugin's own identity in plugin context instead of the world's
+- **QuowMindspace `json` is nil** — JSON library is now registered as a global, not just via `require()`
+- **QuowMissions concatenate nil** — Added `GetPluginVariable` / `SetPluginVariable` for inter-plugin variable sharing
+- **About dialog** — Logo now displays alongside the title with improved layout
+
 ## [v1.5.2] — About Dialog & Public Release Workflow (2026-03-08)
 
 ### Improvements
