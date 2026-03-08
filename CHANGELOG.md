@@ -4,20 +4,6 @@ All notable changes to KilnMUD are documented here.
 
 ## [v1.5.2] — About Dialog & Public Release Workflow (2026-03-08)
 
-## Improvements
-
-- **About dialog** — Help > About KilnMUD now opens a styled dialog with version, author credit, and a clickable link to the public releases repo
-- **Public release workflow** — CI now automatically publishes releases and build artifacts to [SeanStoves/KilnMUD-Releases](https://github.com/SeanStoves/KilnMUD-Releases) and updates its CHANGELOG.md
-
-## [v1.5.2] — About Dialog & Public Release Workflow (2026-03-08)
-
-## Improvements
-
-- **About dialog** — Help > About KilnMUD now opens a styled dialog with version, author credit, and a clickable link to the public releases repo
-- **Public release workflow** — CI now automatically publishes releases and build artifacts to [SeanStoves/KilnMUD-Releases](https://github.com/SeanStoves/KilnMUD-Releases) and updates its CHANGELOG.md
-
-## [v1.5.2] — About Dialog & Public Release Workflow (2026-03-08)
-
 ### Improvements
 
 - **About dialog** — Help > About KilnMUD now opens a styled dialog with version, author credit, and a clickable link to report bugs or view the changelog
@@ -160,3 +146,4 @@ All notable changes to KilnMUD are documented here.
 - Command history, tab completion, command stacking
 - Speedwalk, auto-say
 - Cross-platform: Windows, macOS, Linux
+
