@@ -4,6 +4,8 @@ name: publish-to-pkgs
 # Manual trigger. Requires a repo secret PKGS_DISPATCH_TOKEN — a fine-grained PAT
 # with Actions: read and write on dwmud-FYI/pkgs.
 on:
+  release:
+    types: [published] # Triggers when a release is published (or created from draft)
   workflow_dispatch:
     inputs:
       tag:
@@ -18,7 +20,7 @@ jobs:
         id: t
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG_IN: ${{ inputs.tag }}
+          TAG_IN: ${{ inputs.tag || github.event.release.tag_name }}
         run: |
           set -euo pipefail
           TAG="$TAG_IN"
