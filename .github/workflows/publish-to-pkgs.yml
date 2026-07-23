@@ -1,0 +1,38 @@
+name: publish-to-pkgs
+
+# Push a KilnMUD release into the dwmud.FYI package pipeline (apt/rpm/pacman/AUR).
+# Manual trigger. Requires a repo secret PKGS_DISPATCH_TOKEN — a fine-grained PAT
+# with Actions: read and write on dwmud-FYI/pkgs.
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "release tag to publish (blank = latest release in this repo)"
+        required: false
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve tag
+        id: t
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG_IN: ${{ inputs.tag }}
+        run: |
+          set -euo pipefail
+          TAG="$TAG_IN"
+          [ -n "$TAG" ] || TAG=$(gh release list -R "$GITHUB_REPOSITORY" --limit 1 --json tagName --jq '.[0].tagName')
+          [ -n "$TAG" ] || { echo "no release tag found"; exit 1; }
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Dispatch add-package in dwmud-FYI/pkgs
+        env:
+          GH_TOKEN: ${{ secrets.PKGS_DISPATCH_TOKEN }}
+        run: |
+          set -euo pipefail
+          echo "publishing ${{ steps.t.outputs.tag }} -> dwmud-FYI/pkgs"
+          gh workflow run add-package.yml -R dwmud-FYI/pkgs \
+            -f source_repo="$GITHUB_REPOSITORY" \
+            -f tag="${{ steps.t.outputs.tag }}" \
+            -f pkgbase=kilnmud
