@@ -3,6 +3,11 @@
 Interface translations live here. Drop a `<lang>.json` file in this folder and the next build bundles
 it into the app; it then appears in **Settings → Language**. No code changes needed.
 
+> **The bundled Spanish (`es`), Dutch (`nl`), and German (`de`) files are AI-generated placeholders**,
+> included as worked examples of the format. They are almost certainly not idiomatic. Please treat them
+> as starting points and submit corrections — a real translation from a native speaker is very welcome
+> and will replace the placeholder.
+
 ## Add a language
 
 1. Copy `en.json` to your language code, e.g. `es.json` (Spanish), `fr.json` (French), `de.json`
