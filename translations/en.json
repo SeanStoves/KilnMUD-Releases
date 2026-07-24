@@ -59,5 +59,24 @@
   "settings.colours": "Colours",
   "settings.resetColours": "Reset colours",
   "settings.coloursHint": "Remaps the 16 standard colours a MUD indexes into. Best effort: a server that sends exact (truecolour) shades shows those as-is. A world can override this palette in its profile.",
-  "settings.resetAll": "Reset all to defaults"
+  "settings.resetAll": "Reset all to defaults",
+
+  "palette.black": "Black",
+  "palette.red": "Red",
+  "palette.green": "Green",
+  "palette.yellow": "Yellow",
+  "palette.blue": "Blue",
+  "palette.magenta": "Magenta",
+  "palette.cyan": "Cyan",
+  "palette.white": "White",
+  "palette.brightBlack": "Bright Black",
+  "palette.brightRed": "Bright Red",
+  "palette.brightGreen": "Bright Green",
+  "palette.brightYellow": "Bright Yellow",
+  "palette.brightBlue": "Bright Blue",
+  "palette.brightMagenta": "Bright Magenta",
+  "palette.brightCyan": "Bright Cyan",
+  "palette.brightWhite": "Bright White",
+  "palette.defaultText": "Default text",
+  "palette.background": "Background"
 }

@@ -61,5 +61,24 @@
   "settings.colours": "Colores",
   "settings.resetColours": "Restablecer colores",
   "settings.coloursHint": "Reasigna los 16 colores estándar que un MUD utiliza. Es aproximado: un servidor que envía colores exactos (truecolor) los muestra tal cual. Un mundo puede anular esta paleta en su perfil.",
-  "settings.resetAll": "Restablecer todo a los valores predeterminados"
+  "settings.resetAll": "Restablecer todo a los valores predeterminados",
+
+  "palette.black": "Negro",
+  "palette.red": "Rojo",
+  "palette.green": "Verde",
+  "palette.yellow": "Amarillo",
+  "palette.blue": "Azul",
+  "palette.magenta": "Magenta",
+  "palette.cyan": "Cian",
+  "palette.white": "Blanco",
+  "palette.brightBlack": "Negro brillante",
+  "palette.brightRed": "Rojo brillante",
+  "palette.brightGreen": "Verde brillante",
+  "palette.brightYellow": "Amarillo brillante",
+  "palette.brightBlue": "Azul brillante",
+  "palette.brightMagenta": "Magenta brillante",
+  "palette.brightCyan": "Cian brillante",
+  "palette.brightWhite": "Blanco brillante",
+  "palette.defaultText": "Texto predeterminado",
+  "palette.background": "Fondo"
 }

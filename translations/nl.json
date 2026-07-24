@@ -61,5 +61,24 @@
   "settings.colours": "Kleuren",
   "settings.resetColours": "Kleuren herstellen",
   "settings.coloursHint": "Wijst de 16 standaardkleuren die een MUD gebruikt opnieuw toe. Zo goed als mogelijk: een server die exacte kleuren (truecolor) stuurt, toont die ongewijzigd. Een wereld kan dit palet in zijn profiel overschrijven.",
-  "settings.resetAll": "Alles terugzetten naar standaard"
+  "settings.resetAll": "Alles terugzetten naar standaard",
+
+  "palette.black": "Zwart",
+  "palette.red": "Rood",
+  "palette.green": "Groen",
+  "palette.yellow": "Geel",
+  "palette.blue": "Blauw",
+  "palette.magenta": "Magenta",
+  "palette.cyan": "Cyaan",
+  "palette.white": "Wit",
+  "palette.brightBlack": "Fel zwart",
+  "palette.brightRed": "Fel rood",
+  "palette.brightGreen": "Fel groen",
+  "palette.brightYellow": "Fel geel",
+  "palette.brightBlue": "Fel blauw",
+  "palette.brightMagenta": "Fel magenta",
+  "palette.brightCyan": "Fel cyaan",
+  "palette.brightWhite": "Fel wit",
+  "palette.defaultText": "Standaardtekst",
+  "palette.background": "Achtergrond"
 }
