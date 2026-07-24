@@ -75,6 +75,23 @@ jobs:
           ssh-key: ${{ secrets.SOURCE_DEPLOY_KEY }}
           persist-credentials: false
 
+      # Community translations live in this repo (translations/), separate from the private source.
+      # Pull them and drop them into the app's locales so the frontend bundles them; en.json is the
+      # translator template and is skipped (English ships inside the app).
+      - name: Checkout translations
+        uses: actions/checkout@v4
+        with:
+          path: .l10n
+          sparse-checkout: translations
+
+      - name: Merge community translations
+        shell: bash
+        run: |
+          if [ -d .l10n/translations ]; then
+            mkdir -p src/locales
+            find .l10n/translations -maxdepth 1 -name '*.json' ! -name 'en.json' -exec cp -v {} src/locales/ \;
+          fi
+
       - name: Install Linux dependencies
         if: runner.os == 'Linux'
         run: |
