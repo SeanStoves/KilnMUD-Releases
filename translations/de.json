@@ -1,5 +1,6 @@
 {
   "_name": "Deutsch",
+
   "_note": "AI-generated placeholder translation. See README.md — improvements welcome.",
 
   "toolbar.disconnect": "Trennen",
@@ -46,10 +47,14 @@
   "common.enabled": "aktiviert",
 
   "map.nameArea": "Benenne das Gebiet, in dem du dich befindest",
+
   "vitals.barColour": "Balkenfarbe",
+
   "gmcp.pathWarn": "Nicht im aktuell eintreffenden GMCP. In Ordnung für ein Feld, das anderswo erscheint (z. B. ein Schiffsfeld auf einem Planeten), aber es könnte auch ein Tippfehler sein — es zeigt nichts an, bis es aufgelöst wird.",
 
   "settings.title": "Einstellungen",
+  "settings.tabGeneral": "Allgemein",
+  "settings.tabAppearance": "Darstellung",
   "settings.intro": "Globale Standardwerte für die gesamte App. Eine Welt kann ihre Farben im eigenen Profil überschreiben.",
   "settings.language": "Sprache",
   "settings.langSystem": "Systemstandard",
@@ -58,6 +63,8 @@
   "settings.panels": "Panels",
   "settings.noAutoDock": "Schwebende Fenster docken beim Ziehen nicht automatisch an (zum Andocken die Andock-Schaltfläche des Panels verwenden)",
   "settings.display": "Anzeige",
+  "settings.theme": "Design",
+  "settings.themeHint": "Färbt die Oberflächen der Anwendung selbst. Die Spielausgabe behält ihre eigenen Farben, die unten eingestellt werden.",
   "settings.font": "Schriftart",
   "settings.fontDefault": "Standard (Monospace)",
   "settings.fontCurrent": "Aktuell",
@@ -113,6 +120,8 @@
   "profile.clearCreds": "Gespeicherte Anmeldedaten löschen",
   "profile.afterLogin": "Nach der Anmeldung",
   "profile.afterLoginHint": "ein Befehl pro Zeile, gesendet sobald du angemeldet bist (nur bei Auto-Login)",
+  "profile.overrideTheme": "Für diese Welt ein anderes Design verwenden",
+  "profile.overrideThemeHint": "Gilt, solange die Sitzung dieser Welt offen ist, damit sich Welten auf einen Blick unterscheiden lassen.",
   "profile.overridePalette": "Die globale Palette für diese Welt überschreiben",
   "profile.overrideHint": "Nach bestem Bemühen: ordnet die 16 Standardfarben neu zu; Truecolor, das der Server sendet, wird unverändert angezeigt. Nützlich für eine besser lesbare oder farbenblindfreundliche Auswahl in dieser Welt.",
   "profile.resetGlobal": "Auf global zurücksetzen",
@@ -148,6 +157,9 @@
   "rule.highlight": "Hervorheben {{color}}",
   "rule.runsOnMatch": "wird bei Treffer ausgeführt",
   "rule.empty": "Noch nichts. Füge unten eine hinzu.",
+  "rule.search": "Nach Name, Gruppe oder Aktion suchen...",
+  "rule.matches": "{{n}} angezeigt",
+  "rule.noMatches": "Nichts passt zu dieser Suche.",
   "rule.capCode": "Captures kommen in der {{matches}}-Tabelle an: {{matches[0]}} ist der ganze Treffer, {{matches[1]}} und weiter sind die nummerierten Gruppen und {{matches.name}} ist eine benannte Gruppe. Der {{%1}}-Stil ist nur Text und in Lua nicht verfügbar. Gib die Ausgabe mit {{Send}}, {{Echo}}, {{Note}}, {{Gag}} oder {{Log}} aus. Globale bleiben für die Sitzung erhalten.",
   "rule.capSend": "Captures: {{%0}} ist der ganze Treffer, {{%1}} bis {{%9}} sind die nummerierten Gruppen und {{%<name>}} ist eine benannte Gruppe. Verwende in Code-Aktionen stattdessen die {{matches}}-Tabelle.",
   "rule.color0": "schwarz",

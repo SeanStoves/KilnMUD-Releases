@@ -1,5 +1,6 @@
 {
   "_name": "Nederlands",
+
   "_note": "AI-generated placeholder translation. See README.md — improvements welcome.",
 
   "toolbar.disconnect": "Verbinding verbreken",
@@ -46,10 +47,14 @@
   "common.enabled": "ingeschakeld",
 
   "map.nameArea": "Geef het gebied waar je staat een naam",
+
   "vitals.barColour": "balkkleur",
+
   "gmcp.pathWarn": "Niet aanwezig in de GMCP die nu binnenkomt. Prima voor een veld dat elders verschijnt (bijv. een schipveld terwijl je op een planeet bent), maar het kan ook een typefout zijn — het toont niets totdat het oplost.",
 
   "settings.title": "Instellingen",
+  "settings.tabGeneral": "Algemeen",
+  "settings.tabAppearance": "Weergave",
   "settings.intro": "Globale standaardwaarden voor de hele app. Een wereld kan zijn kleuren in zijn eigen profiel overschrijven.",
   "settings.language": "Taal",
   "settings.langSystem": "Systeemstandaard",
@@ -58,6 +63,8 @@
   "settings.panels": "Panelen",
   "settings.noAutoDock": "Zwevende vensters koppelen niet automatisch vast bij het slepen (gebruik de vastzetknop van het paneel)",
   "settings.display": "Weergave",
+  "settings.theme": "Thema",
+  "settings.themeHint": "Kleurt de vlakken van de applicatie zelf. De spel-uitvoer houdt zijn eigen kleuren, hieronder ingesteld.",
   "settings.font": "Lettertype",
   "settings.fontDefault": "Standaard (monospace)",
   "settings.fontCurrent": "Huidige",
@@ -113,6 +120,8 @@
   "profile.clearCreds": "Opgeslagen inloggegevens wissen",
   "profile.afterLogin": "Na het inloggen",
   "profile.afterLoginHint": "één opdracht per regel, verzonden zodra je bent ingelogd (alleen bij automatisch inloggen)",
+  "profile.overrideTheme": "Een ander thema voor deze wereld gebruiken",
+  "profile.overrideThemeHint": "Geldt zolang de sessie van deze wereld open is, zodat werelden in één oogopslag te onderscheiden zijn.",
   "profile.overridePalette": "Het globale palet voor deze wereld overschrijven",
   "profile.overrideHint": "Zo goed als mogelijk: wijst de 16 standaardkleuren opnieuw toe; truecolor die de server stuurt wordt ongewijzigd getoond. Handig voor een beter leesbare of kleurenblindvriendelijke set in deze wereld.",
   "profile.resetGlobal": "Terugzetten naar globaal",
@@ -148,6 +157,9 @@
   "rule.highlight": "Markeren {{color}}",
   "rule.runsOnMatch": "wordt uitgevoerd bij match",
   "rule.empty": "Nog niets. Voeg er hieronder een toe.",
+  "rule.search": "Zoek op naam, groep of actie...",
+  "rule.matches": "{{n}} getoond",
+  "rule.noMatches": "Niets komt overeen met die zoekopdracht.",
   "rule.capCode": "Vangsten komen binnen in de {{matches}}-tabel: {{matches[0]}} is de hele match, {{matches[1]}} en verder zijn de genummerde groepen en {{matches.name}} is een benoemde groep. De {{%1}}-stijl is alleen tekst en niet beschikbaar in Lua. Stuur uitvoer met {{Send}}, {{Echo}}, {{Note}}, {{Gag}} of {{Log}}. Globalen blijven behouden tijdens de sessie.",
   "rule.capSend": "Vangsten: {{%0}} is de hele match, {{%1}} tot {{%9}} zijn de genummerde groepen en {{%<name>}} is een benoemde groep. Gebruik in Code-acties de {{matches}}-tabel in plaats daarvan.",
   "rule.color0": "zwart",

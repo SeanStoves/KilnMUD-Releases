@@ -1,5 +1,6 @@
 {
   "_name": "Español",
+
   "_note": "AI-generated placeholder translation. See README.md — improvements welcome.",
 
   "toolbar.disconnect": "Desconectar",
@@ -46,10 +47,14 @@
   "common.enabled": "activado",
 
   "map.nameArea": "Nombra el área en la que te encuentras",
+
   "vitals.barColour": "color de la barra",
+
   "gmcp.pathWarn": "No está en el GMCP que llega ahora mismo. Bien para un campo que aparece en otro lugar (p. ej. un campo de nave estando en un planeta), pero también podría ser un error tipográfico — no muestra nada hasta que se resuelve.",
 
   "settings.title": "Ajustes",
+  "settings.tabGeneral": "General",
+  "settings.tabAppearance": "Apariencia",
   "settings.intro": "Valores globales para toda la aplicación. Un mundo puede anular sus colores en su propio perfil.",
   "settings.language": "Idioma",
   "settings.langSystem": "Predeterminado del sistema",
@@ -58,6 +63,8 @@
   "settings.panels": "Paneles",
   "settings.noAutoDock": "Las ventanas flotantes no se acoplan solas al arrastrarlas (usa el botón de acoplar del panel)",
   "settings.display": "Pantalla",
+  "settings.theme": "Tema",
+  "settings.themeHint": "Colorea las superficies de la propia aplicación. La salida del juego conserva sus colores, configurados abajo.",
   "settings.font": "Fuente",
   "settings.fontDefault": "Predeterminada (monoespaciada)",
   "settings.fontCurrent": "Actual",
@@ -113,6 +120,8 @@
   "profile.clearCreds": "Borrar credenciales guardadas",
   "profile.afterLogin": "Tras iniciar sesión",
   "profile.afterLoginHint": "un comando por línea, enviado una vez que hayas iniciado sesión (solo inicio automático)",
+  "profile.overrideTheme": "Usar un tema distinto para este mundo",
+  "profile.overrideThemeHint": "Se aplica mientras la sesión de este mundo está abierta, para distinguir los mundos de un vistazo.",
   "profile.overridePalette": "Anular la paleta global para este mundo",
   "profile.overrideHint": "Es aproximado: reasigna los 16 colores estándar; el truecolor que envía el servidor se muestra tal cual. Útil para un conjunto más legible o adaptado a daltonismo en este mundo.",
   "profile.resetGlobal": "Restablecer a la global",
@@ -148,6 +157,9 @@
   "rule.highlight": "Resaltar {{color}}",
   "rule.runsOnMatch": "se ejecuta al coincidir",
   "rule.empty": "Nada todavía. Añade una abajo.",
+  "rule.search": "Buscar por nombre, grupo o acción...",
+  "rule.matches": "{{n}} mostrados",
+  "rule.noMatches": "Nada coincide con esa búsqueda.",
   "rule.capCode": "Las capturas llegan en la tabla {{matches}}: {{matches[0]}} es la coincidencia completa, {{matches[1]}} en adelante son los grupos numerados y {{matches.name}} es un grupo con nombre. El estilo {{%1}} es solo texto y no está disponible en Lua. Envía la salida con {{Send}}, {{Echo}}, {{Note}}, {{Gag}} o {{Log}}. Las globales persisten durante la sesión.",
   "rule.capSend": "Capturas: {{%0}} es la coincidencia completa, {{%1}} a {{%9}} son los grupos numerados y {{%<name>}} es un grupo con nombre. En las acciones de Código, usa la tabla {{matches}} en su lugar.",
   "rule.color0": "negro",

@@ -45,10 +45,14 @@
   "common.enabled": "enabled",
 
   "map.nameArea": "Name the area you're standing in",
+
   "vitals.barColour": "bar colour",
+
   "gmcp.pathWarn": "Not in the GMCP arriving right now. Fine for a field that appears elsewhere (e.g. a ship field while planet-side), but it may also be a typo — it shows nothing until it resolves.",
 
   "settings.title": "Settings",
+  "settings.tabGeneral": "General",
+  "settings.tabAppearance": "Appearance",
   "settings.intro": "Global defaults for the whole app. A world can override its colours in its own profile.",
   "settings.language": "Language",
   "settings.langSystem": "System default",
@@ -57,6 +61,8 @@
   "settings.panels": "Panels",
   "settings.noAutoDock": "Floating windows don't auto-dock when dragged (use the panel's dock button to re-dock)",
   "settings.display": "Display",
+  "settings.theme": "Theme",
+  "settings.themeHint": "Colours the application's own surfaces. The game output keeps its own colours, set below.",
   "settings.font": "Font",
   "settings.fontDefault": "Default (monospace)",
   "settings.fontCurrent": "Current",
@@ -112,6 +118,8 @@
   "profile.clearCreds": "Clear saved credentials",
   "profile.afterLogin": "After login",
   "profile.afterLoginHint": "one command per line, sent once you're logged in (auto-login only)",
+  "profile.overrideTheme": "Use a different theme for this world",
+  "profile.overrideThemeHint": "Applies while this world's session is open, so worlds are tellable apart at a glance.",
   "profile.overridePalette": "Override the global palette for this world",
   "profile.overrideHint": "Best effort: remaps the 16 standard colours; truecolour the server sends shows as-is. Useful for a more readable or colourblind-friendly set on this world.",
   "profile.resetGlobal": "Reset to global",
@@ -147,6 +155,9 @@
   "rule.highlight": "Highlight {{color}}",
   "rule.runsOnMatch": "runs on match",
   "rule.empty": "Nothing yet. Add one below.",
+  "rule.search": "Search by name, group, or action...",
+  "rule.matches": "{{n}} shown",
+  "rule.noMatches": "Nothing matches that search.",
   "rule.capCode": "Captures arrive in the {{matches}} table: {{matches[0]}} is the whole match, {{matches[1]}} and up are the numbered groups, and {{matches.name}} is a named group. The {{%1}} style is text-only and not available in Lua. Send output with {{Send}}, {{Echo}}, {{Note}}, {{Gag}}, or {{Log}}. Globals persist for the session.",
   "rule.capSend": "Captures: {{%0}} is the whole match, {{%1}} through {{%9}} are the numbered groups, and {{%<name>}} is a named group. In Code actions, use the {{matches}} table instead.",
   "rule.color0": "black",
