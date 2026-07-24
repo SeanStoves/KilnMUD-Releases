@@ -41,6 +41,13 @@
 
   "common.cancel": "Annuleren",
   "common.save": "Opslaan",
+  "common.delete": "verwijderen",
+  "common.remove": "verwijderen",
+  "common.enabled": "ingeschakeld",
+
+  "map.nameArea": "Geef het gebied waar je staat een naam",
+  "vitals.barColour": "balkkleur",
+  "gmcp.pathWarn": "Niet aanwezig in de GMCP die nu binnenkomt. Prima voor een veld dat elders verschijnt (bijv. een schipveld terwijl je op een planeet bent), maar het kan ook een typefout zijn — het toont niets totdat het oplost.",
 
   "settings.title": "Instellingen",
   "settings.intro": "Globale standaardwaarden voor de hele app. Een wereld kan zijn kleuren in zijn eigen profiel overschrijven.",

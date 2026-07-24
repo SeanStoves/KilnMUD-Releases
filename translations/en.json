@@ -40,6 +40,13 @@
 
   "common.cancel": "Cancel",
   "common.save": "Save",
+  "common.delete": "delete",
+  "common.remove": "remove",
+  "common.enabled": "enabled",
+
+  "map.nameArea": "Name the area you're standing in",
+  "vitals.barColour": "bar colour",
+  "gmcp.pathWarn": "Not in the GMCP arriving right now. Fine for a field that appears elsewhere (e.g. a ship field while planet-side), but it may also be a typo — it shows nothing until it resolves.",
 
   "settings.title": "Settings",
   "settings.intro": "Global defaults for the whole app. A world can override its colours in its own profile.",

@@ -41,6 +41,13 @@
 
   "common.cancel": "Cancelar",
   "common.save": "Guardar",
+  "common.delete": "eliminar",
+  "common.remove": "quitar",
+  "common.enabled": "activado",
+
+  "map.nameArea": "Nombra el área en la que te encuentras",
+  "vitals.barColour": "color de la barra",
+  "gmcp.pathWarn": "No está en el GMCP que llega ahora mismo. Bien para un campo que aparece en otro lugar (p. ej. un campo de nave estando en un planeta), pero también podría ser un error tipográfico — no muestra nada hasta que se resuelve.",
 
   "settings.title": "Ajustes",
   "settings.intro": "Valores globales para toda la aplicación. Un mundo puede anular sus colores en su propio perfil.",

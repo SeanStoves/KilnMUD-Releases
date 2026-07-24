@@ -41,6 +41,13 @@
 
   "common.cancel": "Abbrechen",
   "common.save": "Speichern",
+  "common.delete": "löschen",
+  "common.remove": "entfernen",
+  "common.enabled": "aktiviert",
+
+  "map.nameArea": "Benenne das Gebiet, in dem du dich befindest",
+  "vitals.barColour": "Balkenfarbe",
+  "gmcp.pathWarn": "Nicht im aktuell eintreffenden GMCP. In Ordnung für ein Feld, das anderswo erscheint (z. B. ein Schiffsfeld auf einem Planeten), aber es könnte auch ein Tippfehler sein — es zeigt nichts an, bis es aufgelöst wird.",
 
   "settings.title": "Einstellungen",
   "settings.intro": "Globale Standardwerte für die gesamte App. Eine Welt kann ihre Farben im eigenen Profil überschreiben.",
