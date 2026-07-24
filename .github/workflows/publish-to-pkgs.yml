@@ -1,11 +1,14 @@
 name: publish-to-pkgs
 
 # Push a KilnMUD release into the dwmud.FYI package pipeline (apt/rpm/pacman/AUR).
-# Manual trigger. Requires a repo secret PKGS_DISPATCH_TOKEN — a fine-grained PAT
-# with Actions: read and write on dwmud-FYI/pkgs.
+# Requires a repo secret PKGS_DISPATCH_TOKEN — a fine-grained PAT with Actions: read and write on
+# dwmud-FYI/pkgs.
+#
+# Manual only. The automated feed now runs inside build.yml, which fires this same dispatch once all
+# platforms are built. A release created there uses GITHUB_TOKEN, which does not trigger a
+# release:published workflow, so wiring the auto-feed here would silently never run. This stays as a
+# by-hand re-feed of a tag.
 on:
-  release:
-    types: [published] # Triggers when a release is published (or created from draft)
   workflow_dispatch:
     inputs:
       tag:
