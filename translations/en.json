@@ -311,5 +311,20 @@
   "panes.scrollback": "Lines",
   "panes.scrollbackHint": "Lines kept in each pane. 0 follows the global scrollback setting; set it on a busy pane you want to keep more or less of.",
   "panes.errDuplicate": "Two panes are both named \"{{name}}\". Names have to be unique, because rules point at them by name.",
-  "panes.orphans": "These rules point at a pane that no longer exists, so their lines are dropped: {{names}}"
+  "panes.orphans": "These rules point at a pane that no longer exists, so their lines are dropped: {{names}}",
+
+  "support.title": "Report a Bug",
+  "support.blurb": "This files a public issue on the KilnMUD tracker on GitHub. Say what broke and what you expected; what you see here is everything that gets sent.",
+  "support.subject": "Title",
+  "support.subjectPlaceholder": "One line: what broke",
+  "support.detail": "What happened",
+  "support.detailPlaceholder": "What you did, what you expected, and what happened instead. The server you were on and a rough time help.",
+  "support.diag": "Include:",
+  "support.debug": "Include the diagnostic log (shown below before it goes anywhere)",
+  "support.send": "Send report",
+  "support.sending": "Sending…",
+  "support.filed": "Filed. Follow it at",
+  "support.done": "Done",
+  "support.needTitle": "Give the report a title.",
+  "support.needBody": "Say what happened; an empty report can't be acted on."
 }

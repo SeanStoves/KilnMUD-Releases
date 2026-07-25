@@ -313,5 +313,20 @@
   "panes.scrollback": "Líneas",
   "panes.scrollbackHint": "Líneas conservadas en cada panel. 0 sigue el ajuste global de historial; ponlo en un panel con mucho movimiento del que quieras conservar más o menos.",
   "panes.errDuplicate": "Dos paneles se llaman «{{name}}». Los nombres deben ser únicos, porque las reglas los referencian por nombre.",
-  "panes.orphans": "Estas reglas apuntan a un panel que ya no existe, así que sus líneas se descartan: {{names}}"
+  "panes.orphans": "Estas reglas apuntan a un panel que ya no existe, así que sus líneas se descartan: {{names}}",
+
+  "support.title": "Informar de un error",
+  "support.blurb": "Esto crea una incidencia pública en el rastreador de KilnMUD en GitHub. Cuenta qué se rompió y qué esperabas; lo que ves aquí es todo lo que se envía.",
+  "support.subject": "Título",
+  "support.subjectPlaceholder": "Una línea: qué se rompió",
+  "support.detail": "Qué pasó",
+  "support.detailPlaceholder": "Qué hiciste, qué esperabas y qué pasó en su lugar. El servidor donde estabas y una hora aproximada ayudan.",
+  "support.diag": "Incluir:",
+  "support.debug": "Incluir el registro de diagnóstico (se muestra abajo antes de enviarse)",
+  "support.send": "Enviar informe",
+  "support.sending": "Enviando…",
+  "support.filed": "Creada. Síguela en",
+  "support.done": "Listo",
+  "support.needTitle": "Ponle un título al informe.",
+  "support.needBody": "Cuenta qué pasó; un informe vacío no sirve de nada."
 }

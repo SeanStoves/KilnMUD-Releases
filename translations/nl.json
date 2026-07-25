@@ -313,5 +313,20 @@
   "panes.scrollback": "Regels",
   "panes.scrollbackHint": "Regels die per paneel bewaard blijven. 0 volgt de globale instelling; stel het in op een druk paneel waarvan je meer of minder wilt bewaren.",
   "panes.errDuplicate": "Twee panelen heten allebei \"{{name}}\". Namen moeten uniek zijn, omdat regels ernaar verwijzen op naam.",
-  "panes.orphans": "Deze regels verwijzen naar een paneel dat niet meer bestaat, dus hun regels vervallen: {{names}}"
+  "panes.orphans": "Deze regels verwijzen naar een paneel dat niet meer bestaat, dus hun regels vervallen: {{names}}",
+
+  "support.title": "Een fout melden",
+  "support.blurb": "Dit maakt een openbare issue aan op de KilnMUD-tracker op GitHub. Vertel wat er kapot ging en wat je verwachtte; wat je hier ziet is alles wat verstuurd wordt.",
+  "support.subject": "Titel",
+  "support.subjectPlaceholder": "Eén regel: wat ging er kapot",
+  "support.detail": "Wat er gebeurde",
+  "support.detailPlaceholder": "Wat je deed, wat je verwachtte en wat er in plaats daarvan gebeurde. De server waar je op zat en een tijdstip helpen.",
+  "support.diag": "Meesturen:",
+  "support.debug": "Diagnoselog meesturen (hieronder te zien voordat er iets verstuurd wordt)",
+  "support.send": "Melding versturen",
+  "support.sending": "Versturen…",
+  "support.filed": "Aangemaakt. Volg hem op",
+  "support.done": "Klaar",
+  "support.needTitle": "Geef de melding een titel.",
+  "support.needBody": "Vertel wat er gebeurde; aan een lege melding heeft niemand iets."
 }

@@ -313,5 +313,20 @@
   "panes.scrollback": "Zeilen",
   "panes.scrollbackHint": "Zeilen, die je Bereich behalten werden. 0 folgt der globalen Verlaufseinstellung; setze es bei einem stark laufenden Bereich, von dem du mehr oder weniger behalten willst.",
   "panes.errDuplicate": "Zwei Bereiche heißen beide „{{name}}“. Namen müssen eindeutig sein, weil Regeln sie über den Namen ansprechen.",
-  "panes.orphans": "Diese Regeln verweisen auf einen Bereich, den es nicht mehr gibt, ihre Zeilen entfallen daher: {{names}}"
+  "panes.orphans": "Diese Regeln verweisen auf einen Bereich, den es nicht mehr gibt, ihre Zeilen entfallen daher: {{names}}",
+
+  "support.title": "Fehler melden",
+  "support.blurb": "Das erstellt ein öffentliches Issue im KilnMUD-Tracker auf GitHub. Beschreibe, was kaputt ging und was du erwartet hast; was du hier siehst, ist alles, was gesendet wird.",
+  "support.subject": "Titel",
+  "support.subjectPlaceholder": "Eine Zeile: was kaputt ging",
+  "support.detail": "Was passiert ist",
+  "support.detailPlaceholder": "Was du getan hast, was du erwartet hast und was stattdessen passiert ist. Der Server und eine ungefähre Uhrzeit helfen.",
+  "support.diag": "Mitsenden:",
+  "support.debug": "Diagnoseprotokoll mitsenden (unten zu sehen, bevor etwas verschickt wird)",
+  "support.send": "Bericht senden",
+  "support.sending": "Wird gesendet…",
+  "support.filed": "Erstellt. Verfolge es unter",
+  "support.done": "Fertig",
+  "support.needTitle": "Gib dem Bericht einen Titel.",
+  "support.needBody": "Beschreibe, was passiert ist; mit einem leeren Bericht kann niemand etwas anfangen."
 }
